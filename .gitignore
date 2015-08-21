@@ -1,0 +1,3 @@
+# Jekyll stuff, prevent it being moved over by accident.
+_site
+.sass-cache
