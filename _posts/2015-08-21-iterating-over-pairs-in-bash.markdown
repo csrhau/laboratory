@@ -11,7 +11,6 @@ The `${parameter#match}` directive evaluates to the value of $parameter with any
 Similarly, `${parameter%match}` allows us to remove matching suffixes.
 The following code splits values into pairs using colon as a separator:
 
-
 {% highlight bash %}
 for config in 3.20GHz:3 2.90GHz:2 3.20GHz:0; do
   FREQ=${config%:*}
