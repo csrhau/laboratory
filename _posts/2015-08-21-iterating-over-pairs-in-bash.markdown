@@ -7,7 +7,7 @@ categories: shell scripting
 
 [Parameter substitution][parameter substitution] is used for manipulating and expanding variables.
 This allows us to simulate data tuples with composite values joined by a separator.
-The code below iterates over a list and uses parameter substitution to `unpack' each element into a pair of values:
+The code below iterates over a list and uses parameter substitution to 'unpack' each element into a pair of values:
 
 {% highlight bash %}
 for config in 3.20GHz:3 2.90GHz:2 3.20GHz:0; do
