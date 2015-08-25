@@ -6,10 +6,8 @@ categories: shell scripting
 ---
 
 [Parameter substitution][parameter substitution] is used for manipulating and expanding variables.
-One possible application for this is to simulate data tuples.
-The code below demonstrates how to simulate tuples by splitting values into pairs.
-The `${parameter#match}` directive evaluates to the value of $parameter with any matching prefix removed, while `${parameter%match}` allows us to remove matching suffixes.
-When used together, these directives allow us to split each value using colon as a separator.
+This allows us to simulate data tuples with composite values joined by a separator.
+The code below iterates over a list and uses parameter substitution to `unpack' each element into a pair of values:
 
 {% highlight bash %}
 for config in 3.20GHz:3 2.90GHz:2 3.20GHz:0; do
@@ -18,5 +16,7 @@ for config in 3.20GHz:3 2.90GHz:2 3.20GHz:0; do
   # Do something with freq and core counts
 done
 {% endhighlight %}
+
+The `${parameter#match}` directive evaluates to the value of $parameter with any matching prefix removed, while `${parameter%match}` allows us to remove matching suffixes.
 
 [parameter substitution]: http://www.tldp.org/LDP/abs/html/parameter-substitution.html
