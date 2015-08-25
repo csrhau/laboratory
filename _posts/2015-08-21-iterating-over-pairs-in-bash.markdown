@@ -17,6 +17,6 @@ for config in 3.20GHz:3 2.90GHz:2 3.20GHz:0; do
 done
 {% endhighlight %}
 
-The `${parameter#match}` directive evaluates to the value of $parameter with any matching prefix removed, while `${parameter%match}` allows us to remove matching suffixes.
+This works because the `${parameter#match}` directive evaluates to the value of $parameter with any matching prefix removed, while `${parameter%match}` allows us to remove matching suffixes.
 
 [parameter substitution]: http://www.tldp.org/LDP/abs/html/parameter-substitution.html
